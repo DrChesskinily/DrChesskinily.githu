@@ -9,6 +9,8 @@
 }
 
 body{
+    background-color: #182740;	
+	
 	overflow-y: hidden;
 }
 
@@ -503,4 +505,14 @@ iframe{
     width: 20px;
     height: 20px;
 
+}
+.chart{
+    background-color: #182740;	
+	height: 600px;
+	padding-top:100px;
+	padding-bottom:150px;
+	display:flex;
+	justify-content: center;
+	position:relative;
+/* 	background-color: #1B2430; */
 }
