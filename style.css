@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+	font-family: 'VT323', monospace;
+
+    color: #ffffff;
+}
+
+body{
+	overflow-y: hidden;
+}
+
+.loader{
+    position: fixed;
+    background-color: #0476D9;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: solid rgb(255, 255, 255,.1) 10px;
+    border-top: 10px solid #FCF7FF;
+    animation: loader 1.5s infinite linear;
+}
+
+@keyframes loader{
+    0%{
+        transform: rotate(0deg)
+    }
+
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+a:hover{
+    color: #e1e3e1;
+}
+
+a{
+	text-decoration:none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.logo-title{
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    color: #FFDB58;
+	font-family: 'VT323', monospace;
+}
+
+
+.nav-bar-responsive{
+    display:none;
+}
+
+.nav-bar{
+    display: flex;
+    height: 50px;
+	align-items: center;
+    background-color: #1e304f;
+}
+
+.nav-items{
+    margin: 20px;
+}
+
+.nav-item{
+    display: inline;
+    margin:30px;
+}
+
+.nav-item a{
+	font-family: 'VT323', monospace;
+
+}
+
+.nav-logo{
+    height: 50px;
+    float: left;
+}
+
+.buy-mio{
+	font-family: 'VT323', monospace;
+    text-decoration: none;
+	font-size:20px;
+    padding: 12px;
+    position: absolute;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #FFDB58;
+    right: 0;
+	margin: 1px;
+}
+
+.wallet{
+	display:none;
+    color: #FFDB58;
+	font-family: 'VT323', monospace;
+    text-decoration: none;
+	font-size:20px;
+    padding: 12px;
+    position: absolute;
+	right: 0;
+}
+
+.buy-mio:hover{
+    color: #00ff40;
+}
+
+@media only screen and (max-width:741px){
+    .nav-bar{
+        display:none;
+    }
+
+    .nav-bar-responsive{
+        display:block;
+        height: 50px;
+        background-color:#1e304f;
+    }
+
+    .dropdown .dropbtn{
+        font-size: 40px;
+        position: relative;
+        border: none;
+        outline: none;
+        color: white;
+        /* padding: 14px 16px; */
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin:0; /* Important for vertical align on mobile phones */
+        float: right;
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color:#FFDB58;
+        width: 145px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 2;
+        margin-top: 40px;
+        position: absolute;
+        right: 0;
+    } 
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+      }
+    
+    .dropdown-content li:hover {background-color: #00ff40;}
+}
+
+.section-main{
+    display: flex;
+    justify-content: center;
+/* 	flex-direction: column; */
+    align-items: center;
+    background-color: #182740;
+    /* max-height: 1000px; */
+    min-height: 95vh;
+	z-index:1;
+	position:relative;
+}
+
+.section-main::after{
+	  background:url('img/doom.png');
+	  content: "";
+	  position: absolute;
+	  top: 0; 
+	  left: 0;
+	  width: 100%; 
+	  height: 100%;  
+	  opacity: .3; 
+	  z-index: -1;
+	  background-repeat:no-repeat;
+	  background-size:cover;
+}
+
+.section-utility{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	z-index:1;
+	position:relative;
+}
+
+.section-utility::after{
+	  content: "";
+	  position: absolute;
+	  top: 0; 
+	  left: 0;
+	  width: 100%; 
+	  height: 100%;  
+	  opacity: .3; 
+	  z-index: -1;
+	  background-repeat:no-repeat;
+	  background-size:cover;
+}
+
+.main{
+    width: 60vw;
+}
+
+.main-container{
+	width: 100%;
+    float: right;
+	display: block;
+}
+
+.info{
+    width: 100%;
+    font-size: 23px;
+    float: left;
+}
+
+.main-img{
+    height: 50%;
+    width: 50%;
+	
+    
+}  
+    .info {
+        width: 100%;
+        font-size: 23px;
+    }
+/*     .main-img{
+        width: 100%;
+        height: 100%;
+    } */
+
+    .logo-title{
+        width: 100%;
+        height: 100%;
+    }
+
+    .buttons{
+        width: 100%;
+        float: none;
+    }
+
+    .main{
+        text-align: center;
+    }
+    .main-img-container{
+        height: 500px;
+        width: 400px;
+    }
+
+
+.pruebaxd{
+/*     background-image: url("img/bg.png"); */
+	background-color:#182740;
+	background-repeat: no-repeat;
+/* 	background-size:contain; */
+	background-position: center;
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     flex-wrap: wrap; */
+	z-index:1;
+	position:relative;
+}
+
+.info-container::after{
+	  content: "";
+	  position: absolute;
+	  top: 0; 
+	  left: 0;
+	  width: 100%; 
+	  height: 100%;  
+	  opacity: .1; 
+	  z-index: -1;
+	  background-repeat:no-repeat;
+	  background-size:cover;
+}
+
+.info-box{
+    padding: 10px;
+    font-size: 25px;
+    margin: 10px;
+    display: inline-block;
+    min-height: 300px;
+    width: 60vw;
+    word-wrap: break-word;
+    background-color: #3F4E4F;
+}
+
+.info3{
+    flex-grow:1;
+}
+
+
+.long{
+    max-width: 739px;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+	/* margin-top:70px; */
+    justify-content: center;
+	align-items:center;
+    /* width: 50%; */
+/*     float: left; */
+}
+
+.buttons a{
+    padding: 14px;
+    margin: 7px;
+    font-size: 19px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 36px;
+    border: solid #FFDB58;
+    transition: 0.7s;
+	font-family: 'VT323', monospace;
+}
+
+.buttons a:hover{
+    border: solid #00ff40;
+}
+
+.info-img2-container{
+    /* width: 60vh; */
+    display: block;
+    text-align: center;
+    height: 600px;
+}
+
+
+.info-img2{
+    height: 100%;
+}
+
+.mioc-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mioc-container img{
+    max-height: 350px;
+    width: 260px;
+}
+
+.stats{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-elements{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.statbox{
+    margin: 0;
+    width: 200px;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border: solid red 1px;
+}
+
+.statinfo{
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.stat h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin: 0 0 0 0;
+}
+
+.stat p{
+    text-align: center;
+}
+
+.footer{
+	display: block;
+    height:200px;
+    background-color: #182740;
+    justify-content: center;
+    text-align: center;
+	width:100%;
+}
+
+.footer img{
+    height: 33%;
+}
+
+.footer p{
+    height: 33%;
+    width: 100%;
+}
+
+.feature-container{
+    display: flex;
+	flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+	position: relative;
+	z-index:1;
+}
+
+.feature-container::after{
+	  content: "";
+	  position: absolute;
+	  top: 0; 
+	  left: 0;
+	  width: 100%; 
+	  height: 100%;  
+	  opacity: .1; 
+	  z-index: -1;
+	  background-repeat:no-repeat;
+	  background-size:cover;
+}
+
+.img-features{
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.img-feature-container{
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+.feature-box{
+    max-height: 100px;
+	text-align:center;
+    padding: 30px;
+    width: 300px;
+    margin: 10px;
+/*     background-color: #3F4E4F; */
+	background-image:url("https://toppng.com/public/uploads/thumbnail/cloud-fixed-06-blueberry-sans-pixel-art-11562943662t42gti4um9.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+    border-radius: 20px;
+}
+
+.feature-box div{
+	color:#000000;
+	margin:15px;
+	font-size:16.4px;
+}
+
+.feature-box h2{
+	color:#a3a310;
+}
+
+.feature-row{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 300px;
+    display: flex;
+}
+
+.fdfd::after{
+	display:inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+
+}
