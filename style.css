@@ -218,6 +218,10 @@ h2{
     width: 60vw;
 }
 
+iframe{
+	display:flex;
+	justify-content:center;
+}
 .main-container{
 	width: 100%;
     float: right;
